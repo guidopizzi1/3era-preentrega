@@ -410,7 +410,7 @@ footer img{
 
 
 /*  Pantalla resposive para la pagina principal  */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 900px){
     .grilla-colchones {
         display: grid;
         grid-template-columns: auto;
@@ -463,4 +463,12 @@ footer img{
     display: flex;
     justify-content: center;
     padding: 0%;
+}
+/* .tamaño-carousel{
+    height: 200px;
+    position: absolute;
+} */
+
+.tamaño-carousel{
+    height: 600px;
 }

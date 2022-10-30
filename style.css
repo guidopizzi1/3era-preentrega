@@ -405,6 +405,7 @@ footer img{
     grid-gap: 30px;
     margin-top: 30px;
     position: relative;
+    margin-left: 15px;
     
 }
 
@@ -465,11 +466,14 @@ footer img{
     padding: 0%;
     text-decoration: none;
 }
-/* .tamaño-carousel{
-    height: 200px;
-    position: absolute;
-} */
+.grid-ref p{
+    display: flex;
+    justify-content: start;
+    color: red;
+}
 
-.tamaño-carousel{
-    height: 600px;
+.texto{
+    display: flex;
+    color: blue;
+    justify-content: center;
 }

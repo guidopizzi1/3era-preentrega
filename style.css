@@ -357,16 +357,14 @@ footer img{
    
     }   
 
-    @media only screen and (max-width: 700px){
+    /* responsive */
+    @media only screen and (max-width: 900px){
         .categoria-colchones {
             
             grid-template-columns: auto;
         
         }
-        body {
-            background-color: red;
-        }
-
+        
         .grid-ubicacion {
 
             display: grid;
@@ -410,14 +408,14 @@ footer img{
     
 }
 
+
+/*  Pantalla resposive para la pagina principal  */
 @media only screen and (max-width: 700px){
     .grilla-colchones {
         display: grid;
         grid-template-columns: auto;
     
     }
-   
-
     .grid-ubicacion {
 
         display: grid;

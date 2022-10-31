@@ -433,6 +433,7 @@ footer img{
     display: flex;
     align-items: center;
     margin: 50px;
+    border-radius: 20px;
     }
 
 .wss-logo:hover{
@@ -465,6 +466,7 @@ footer img{
     justify-content: center;
     padding: 0%;
     text-decoration: none;
+    text-decoration: solid;
 }
 .grid-ref p{
     display: flex;

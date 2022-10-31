@@ -354,6 +354,7 @@ footer img{
 
     position: relative;
 
+
    
     }   
 
@@ -378,20 +379,28 @@ footer img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    
+        
 }
 
+.grid-ubicacion {
+    display: grid;
+    justify-content: end;
+}
 .image-gallery{
     width: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .image-title{
     position: relative;
     font-size: 40px;
-    bottom: 0;
+    bottom: 12%;
     background: linear-gradient(white,lightblue);
     display: flex;
+    border-radius: 20px;
+    opacity: 60%;
+    justify-content: center;
 }
 
 .ref-category{
@@ -422,8 +431,12 @@ footer img{
         display: grid;
         grid-template-columns: auto;
         margin-top: 30px;
+        justify-content: center;
+        width: 100%;
 
     }
+
+    
 }
 
 .grid-image{
@@ -447,6 +460,7 @@ footer img{
     grid-template-rows: repeat(1, 1fr);
     position: relative;
     padding: 40px;
+    
 }
 
 .ubi-title{
@@ -478,4 +492,17 @@ footer img{
     display: flex;
     color: blue;
     justify-content: center;
+}
+
+.ubicacion-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #6ec2c5;
+    padding: 10px;     
+}
+
+.d-block{
+    border-radius: 30px;
+    opacity: 90%;
 }

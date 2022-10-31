@@ -30,9 +30,9 @@ body{
 /* } */
 .header-container nav ul {
     height:1%;
-    background-color: #d4ecf5;
+    background-color: #6ec2c5;
     padding: 2%;
-    border: 5px solid black;
+   
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -466,7 +466,7 @@ footer img{
     justify-content: center;
     padding: 0%;
     text-decoration: none;
-    text-decoration: solid;
+    
 }
 .grid-ref p{
     display: flex;

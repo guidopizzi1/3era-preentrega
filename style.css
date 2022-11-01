@@ -499,7 +499,8 @@ footer img{
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #6ec2c5;
-    padding: 10px;     
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 .d-block{

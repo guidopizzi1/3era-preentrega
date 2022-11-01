@@ -8,26 +8,7 @@ body{
     background-color: lightgray;
 }
 
-/* @media only screen and (max-width: 500px){
-    body {
-        background-color:red;
-    }
 
-}
-
-@media only screen and (min-width: 501px) and (max-width: 980px){
-    body {
-        background-color: blue;
-    }
-}
-
-@media only screen and (orientation: landscape){
-
-    .header-container nav ul{
-        background-color: yellow;
-        border: 5px solid red;
-    } */
-/* } */
 .header-container nav ul {
     height:1%;
     background-color: #6ec2c5;
@@ -174,9 +155,12 @@ div img{
 
 section iframe{
 
-    padding-left: 100px;
-    width: 500px;
+    width: 100px;
     height: 400px;
+    border-radius: 20px;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
 }
 
 .fabricación{
@@ -379,13 +363,11 @@ footer img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    margin: 60px;
         
 }
 
-.grid-ubicacion {
-    display: grid;
-    justify-content: end;
-}
+
 .image-gallery{
     width: 100%;
     object-fit: cover;
@@ -507,3 +489,30 @@ footer img{
     border-radius: 30px;
     opacity: 90%;
 }
+
+@media only screen and (max-width: 375px){
+    .grilla-colchones {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        
+    }
+
+
+    .grid-image{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-ubicacion {
+
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 30px;
+        justify-content: center;
+        width: 100%;
+
+    }
+    }

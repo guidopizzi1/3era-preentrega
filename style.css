@@ -468,6 +468,7 @@ footer img{
     display: flex;
     justify-content: start;
     color: red;
+
 }
 
 .texto{
@@ -515,4 +516,15 @@ footer img{
         width: 100%;
 
     }
+    }
+
+    .textoexplicativo:hover{
+        color: red;
+    }
+
+    .grid-ref:hover{
+        background-color: lightseagreen;
+        border-radius: 20px;
+        transition: 2s;
+        
     }

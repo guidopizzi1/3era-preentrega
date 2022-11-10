@@ -1,0 +1,23 @@
+{
+  "name": "1er-entrega-proyecto-final---guido-pizzinato",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidopizzi1/2da-PreEntrega-Proyecto-Final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guidopizzi1/2da-PreEntrega-Proyecto-Final/issues"
+  },
+  "homepage": "https://github.com/guidopizzi1/2da-PreEntrega-Proyecto-Final#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {},
+  "description": ""
+}

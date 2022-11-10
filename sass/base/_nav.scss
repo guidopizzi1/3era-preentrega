@@ -1,0 +1,37 @@
+.header-container{
+
+    height:1%;
+    background-color: #6ec2c5;
+    padding: 2%;
+
+    ul {
+    
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        width: 100%;
+        color: black;
+
+     
+       
+     li:hover{
+
+        transition: all 0.5s;
+        transform: scale(2);
+        }   
+
+
+    img{
+        height: 100px;
+        width: 100px;
+        transform: scale(1.2);
+    }
+    
+        
+    }
+}

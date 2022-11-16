@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 375px) {
   .grilla-colchones {
     display: grid;
     grid-template-columns: auto;
@@ -139,7 +139,7 @@
   height: 400px;
   width: 400px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 375px) {
   .galeriafoto {
     flex-direction: column;
   }
@@ -280,7 +280,7 @@ section iframe {
   font-weight: bold;
   margin-top: 10px;
 }
-@media screen and (max-width: 400px) {
+@media only screen and (min-width: 375px) {
   .grid-ubicacion {
     grid-template-columns: auto;
     grid-template-rows: auto;

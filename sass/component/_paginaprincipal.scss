@@ -1,28 +1,4 @@
-.open-bar{
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    touch-action: manipulation;
 
-    img{
-        width: 40px;
-        position: relative;
-        padding-right: 10px;
-
-    }
-     p{
-         display: block;
-         margin: auto;
-         z-index: auto;
-         font-style: italic;
-     }
-
-}
 
 .ofertas{
     color: white;
@@ -40,13 +16,6 @@
 
 /* al pasar el mouse por encima de los bots escale o crezca 4 veces su tamaño Hover*/
 
-
- nav a {
-     text-decoration: none;
-     color: red;
-     padding: 20px;
-    
- }
 .logo img{
     height: 70px;
     align-items: center;
@@ -107,20 +76,68 @@ section iframe{
     justify-content: center;
 }
 
-.fabricación{
-    padding: 20px;
-    margin-left: 200px;
+.categoria-colchones {
+    display: grid;
+  
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: repeat(1,1fr);
+
+    grid-gap: 10px;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
+    position: relative;
+
+
+   
+    }   
+
+    /* responsive */
+    @media only screen and (max-width: 900px){
+        .categoria-colchones {
+            
+            grid-template-columns: auto;
+        
+        }
+        
+        .grid-ubicacion {
+
+            display: grid;
+            grid-template-columns: 1, 1fr;
+            grid-template-rows: repeat(2, 1fr);
+
+        }
     }
+    
 
-.mapa{
-    padding: 20px;
-    text-align: center;
 
+
+.image-gallery{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
-.mapa1{
-    width: 1200px;
+.image-title{
+    position: relative;
+    font-size: 40px;
+    bottom: 12%;
+    background: linear-gradient(white,lightblue);
+    display: flex;
+    border-radius: 20px;
+    opacity: 60%;
+    justify-content: center;
 }
+
+.ref-category{
+  
+    color:black;
+}
+
+
 
 .contacto{
     color: blue;
@@ -135,7 +152,79 @@ section iframe{
 
 }
 
-.marcascolchones{
-    color: green;
-    padding-left: 500px;
+.grid-ubicacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 3%;
+
+    .ubi-title{
+        color: lightblue;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    @media screen and (max-width: 375px){
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        align-items: center;
+        flex: auto;
+       
+    }
+
+}
+
+
+.nuestras-marcas{
+    background-color: lightblue;
+    margin-top: 30px;
+    h2{
+        text-align: center;
+        padding-top: 2%;
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 250%;
+        ;
+        ul{
+            
+            img:hover{transform: scale(2);
+                /* transform: rotate(30deg); */
+                transition: all 1s;
+
+
+            }
+        }
+    }
+}
+.nuestras-marcas ul{
+    background-color: lightblue;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.ubicacion-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:lightblue;
+    margin-bottom: 20px;
+   
+
+    h2{
+        margin-bottom: 0;
+    }
+}
+
+footer img{
+    height: 70px;
+   
 }

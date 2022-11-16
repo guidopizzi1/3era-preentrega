@@ -6,29 +6,71 @@
     justify-content: center;
     align-items: center;
     height: auto;
+    margin-left: 0;
   }
 }
-.open-bar {
-  background-color: lightblue;
+.titulo-categoria {
+  text-align: center;
+  padding-top: 20px;
+}
+.titulo-categoria h1 {
+  color: #6ec2c5;
+  font-weight: bold;
+}
+.titulo-categoria .presentacion {
+  margin: 0px 10px 0px 10px;
+}
+
+.grilla-colchones {
   display: flex;
-  justify-content: center;
+}
+.grilla-colchones p {
+  color: green;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+}
+.grilla-colchones .sub-colchones img {
+  width: 70%;
   align-items: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  touch-action: manipulation;
+  text-align: center;
 }
-.open-bar img {
-  width: 40px;
+.grilla-colchones .sub-colchones h2 {
+  text-align: center;
+  color: lightblue;
+  font-weight: bold;
+}
+
+.grilla-colchones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 30px;
   position: relative;
-  padding-right: 10px;
 }
-.open-bar p {
-  display: block;
-  margin: auto;
-  z-index: auto;
-  font-style: italic;
+
+/*  Pantalla resposive para la pagina principal  */
+@media only screen and (max-width: 900px) {
+  .grilla-colchones {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .grid-ubicacion {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.grid-image {
+  width: 80%;
+  height: 60%;
+  object-fit: cover;
+  border: solid 4px black;
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  border-radius: 20px;
 }
 
 .ofertas {
@@ -44,12 +86,6 @@
 }
 
 /* al pasar el mouse por encima de los bots escale o crezca 4 veces su tamaño Hover*/
-nav a {
-  text-decoration: none;
-  color: red;
-  padding: 20px;
-}
-
 .logo img {
   height: 70px;
   align-items: center;
@@ -110,197 +146,13 @@ section iframe {
   justify-content: center;
 }
 
-.fabricación {
-  padding: 20px;
-  margin-left: 200px;
-}
-
-.mapa {
-  padding: 20px;
-  text-align: center;
-}
-
-.mapa1 {
-  width: 1200px;
-}
-
-.contacto {
-  color: blue;
-  padding: 10px 10px 20px 35px;
-  margin: 30px;
-}
-
-.contacto1 h3 {
-  color: red;
-  text-decoration: none;
-  padding: 40px 10px 0px 10px;
-}
-
-.marcascolchones {
-  color: green;
-  padding-left: 500px;
-}
-
-.header-container {
-  height: 1%;
-  background-color: #6ec2c5;
-  padding: 2%;
-}
-.header-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  align-items: center;
-  justify-content: space-around;
-  font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 20px;
-  width: 100%;
-  color: black;
-}
-.header-container ul li:hover {
-  transition: all 0.5s;
-  transform: scale(2);
-}
-.header-container ul img {
-  height: 100px;
-  width: 100px;
-  transform: scale(1.2);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: sans-serif;
-  background-color: lightgray;
-}
-
-.textoprincipal {
-  padding: 20px;
-  background-color: grey;
-  border: 50px;
-  border-color: red;
-}
-
-footer img {
-  height: 70px;
-}
-
-.formulario {
-  color: red;
-  padding: 70px;
-}
-
-.imagenesconjunto img {
-  height: 230px;
-  padding: 20px;
-}
-
-.muebles {
-  padding-left: 600px;
-  color: green;
-}
-
-.juegosdeliving h2 {
-  color: blue;
-  padding: 30px 0px 30px 550px;
-}
-
-.textoexplicativo {
-  color: green;
-  padding: 20px 10px 20px 10px;
-  margin: 20px;
-  border: 5px solid black;
-  text-align: center;
-}
-
-.juegosdeliving img {
-  padding-left: 10px;
-  padding-bottom: 20px;
-  height: 300px;
-  width: 430px;
-}
-
-.lineablanco h1 {
-  color: green;
-  padding: 550px;
-}
-
-.imagenesacolchado img {
-  height: 300px;
-  width: 400px;
-  padding: 20px;
-}
-
-.imagenesacolchado h2 {
-  padding-left: 600px;
-}
-
-.novedades h1 {
-  color: green;
-  padding: 550px;
-}
-
-.novedades {
-  display: flex;
-  padding: 20px;
-}
-
-.novedades img {
-  height: 300px;
-  padding: 20px;
-}
-
-.novedades p {
-  padding: 20px;
-}
-
-.datos h1 {
-  color: green;
-  padding: 500px;
-}
-
-.informacion {
-  color: blue;
-}
-
-.nuestras-marcas ul {
-  background-color: grey;
-  margin: 10px;
-  padding: 20px;
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.nuestras-marcas ul img {
-  padding-left: 150px;
-}
-
-.nuestras-marcas ul img:hover {
-  transform: scale(2);
-  /* transform: rotate(30deg); */
-  transition: all 1s;
-}
-
-.nuestras-marcas h1 {
-  display: flex;
-  justify-content: center;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 250%;
-}
-
 .categoria-colchones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  grid-gap: 30px;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  grid-gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -315,13 +167,6 @@ footer img {
     grid-template-rows: repeat(2, 1fr);
   }
 }
-.grid-ubicacion {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  margin: 60px;
-}
-
 .image-gallery {
   width: 100%;
   object-fit: cover;
@@ -343,125 +188,167 @@ footer img {
   color: black;
 }
 
-.grilla-colchones {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-  margin-top: 30px;
-  position: relative;
-  margin-left: 15px;
+.contacto {
+  color: blue;
+  padding: 10px 10px 20px 35px;
+  margin: 30px;
 }
 
-/*  Pantalla resposive para la pagina principal  */
-@media only screen and (max-width: 900px) {
-  .grilla-colchones {
-    display: grid;
-    grid-template-columns: auto;
-  }
-  .grid-ubicacion {
-    display: grid;
-    grid-template-columns: auto;
-    margin-top: 30px;
-    justify-content: center;
-    width: 100%;
-  }
-}
-.grid-image {
-  width: 80%;
-  object-fit: cover;
-  border: solid 4px black;
-  display: flex;
-  align-items: center;
-  margin: 50px;
-  border-radius: 20px;
+.contacto1 h3 {
+  color: red;
+  text-decoration: none;
+  padding: 40px 10px 0px 10px;
 }
 
-.wss-logo:hover {
-  transform: scale(2);
-  transition: all 2s;
-}
-
-.grid-ubicación {
+.grid-ubicacion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  position: relative;
-  padding: 40px;
+  grid-gap: 3%;
+}
+.grid-ubicacion .ubi-title {
+  color: lightblue;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+@media screen and (max-width: 375px) {
+  .grid-ubicacion {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    flex: auto;
+  }
 }
 
-.ubi-title {
+.nuestras-marcas {
+  background-color: lightblue;
+  margin-top: 30px;
+}
+.nuestras-marcas h2 {
+  text-align: center;
+  padding-top: 2%;
+  margin-top: 2%;
   display: flex;
-  position: relative;
-  bottom: 0%;
   justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 250%;
+}
+.nuestras-marcas h2 ul img:hover {
+  transform: scale(2);
+  /* transform: rotate(30deg); */
+  transition: all 1s;
 }
 
-.map-style {
-  border: solid 5px black;
-}
-
-.grid-ref {
-  color: black;
+.nuestras-marcas ul {
+  background-color: lightblue;
+  margin: 2%;
+  padding: 2%;
   display: flex;
+  list-style: none;
   justify-content: center;
-  padding: 0%;
-  text-decoration: none;
-}
-
-.grid-ref p {
-  display: flex;
-  justify-content: start;
-  color: red;
-}
-
-.texto {
-  display: flex;
-  color: blue;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .ubicacion-title {
   display: flex;
   justify-content: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: #6ec2c5;
+  background-color: lightblue;
   margin-bottom: 20px;
-  border-radius: 20px;
+}
+.ubicacion-title h2 {
+  margin-bottom: 0;
 }
 
-.d-block {
-  border-radius: 30px;
-  opacity: 90%;
+footer img {
+  height: 70px;
 }
 
-@media only screen and (max-width: 375px) {
-  .grilla-colchones {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
+.header-container {
+  background-color: #6ec2c5;
+  padding: 1%;
+}
+.header-container ul {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  width: 100%;
+  color: black;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.header-container ul li:hover {
+  transition: all 0.5s;
+  transform: scale(2);
+}
+.header-container ul img {
+  height: 100px;
+  width: 100px;
+  transform: scale(1.2);
+}
+@media screen and (max-width: 375px) {
+  .header-container ul {
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
     align-items: center;
-    height: auto;
   }
-  .grid-image {
-    justify-content: center;
-    align-items: center;
+  .header-container ul li:hover {
+    transform: none;
   }
-  .grid-ubicacion {
-    display: grid;
-    grid-template-columns: auto;
-    margin-top: 30px;
-    justify-content: center;
-    width: 100%;
-  }
-}
-.textoexplicativo:hover {
-  color: red;
 }
 
-.grid-ref:hover {
-  background-color: lightseagreen;
-  border-radius: 20px;
-  transition: 2s;
+.open-bar {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  touch-action: manipulation;
+}
+.open-bar img {
+  width: 40px;
+  position: relative;
+  padding-right: 10px;
+}
+.open-bar p {
+  display: block;
+  margin: auto;
+  z-index: auto;
+  font-style: italic;
+}
+@media screen and (max-width: 375px) {
+  .open-bar p {
+    text-align: center;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: lightgray;
+}
+
+.textoprincipal {
+  padding: 20px;
+  background-color: grey;
+  border: 50px;
+  border-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

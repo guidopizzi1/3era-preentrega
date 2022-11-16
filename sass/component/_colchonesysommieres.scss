@@ -6,7 +6,93 @@
         justify-content: center;
         align-items: center;
         height: auto;
+        margin-left: 0;
         
     }
 }
 
+.titulo-categoria{
+
+    text-align: center;
+    padding-top: 20px;
+
+    h1{
+    color: #6ec2c5;
+    font-weight: bold;
+
+    }
+
+    .presentacion{
+        margin: 0px 10px 0px 10px;
+    
+    }
+}
+
+
+
+.grilla-colchones{
+
+    display: flex;
+
+    p{
+        color: green;
+        margin: 0px 10px 0px 10px;
+        text-align: center;
+    }
+
+    .sub-colchones{
+ 
+        img{
+            width: 70%;
+            align-items: center;
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+            color: lightblue;
+            font-weight: bold;
+        }
+    }
+}
+
+.grilla-colchones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+    position: relative;
+    
+    
+}
+
+/*  Pantalla resposive para la pagina principal  */
+@media only screen and (max-width: 900px){
+    .grilla-colchones {
+        display: grid;
+        grid-template-columns: auto;
+    
+    }
+    .grid-ubicacion {
+
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 30px;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    
+}
+
+.grid-image{
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    border: solid 4px black;
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    border-radius: 20px;
+    }

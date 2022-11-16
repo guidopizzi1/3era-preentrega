@@ -17,13 +17,13 @@
     padding-top: 20px;
 
     h1{
-    color: #6ec2c5;
+    color: lightblue;
     font-weight: bold;
 
     }
 
     .presentacion{
-        margin: 0px 10px 0px 10px;
+        margin: 20px;
     
     }
 }
@@ -91,8 +91,6 @@
     height: 60%;
     object-fit: cover;
     border: solid 4px black;
-    display: flex;
-    align-items: center;
     margin: 50px;
     border-radius: 20px;
     }

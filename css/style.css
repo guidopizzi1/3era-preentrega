@@ -14,11 +14,11 @@
   padding-top: 20px;
 }
 .titulo-categoria h1 {
-  color: #6ec2c5;
+  color: lightblue;
   font-weight: bold;
 }
 .titulo-categoria .presentacion {
-  margin: 0px 10px 0px 10px;
+  margin: 20px;
 }
 
 .grilla-colchones {
@@ -67,10 +67,46 @@
   height: 60%;
   object-fit: cover;
   border: solid 4px black;
-  display: flex;
-  align-items: center;
   margin: 50px;
   border-radius: 20px;
+}
+
+.textoexplicativo h1 {
+  color: lightblue;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.textoexplicativo p {
+  text-align: center;
+  margin: 20px;
+}
+
+.acolchado h2 {
+  color: lightblue;
+  font-weight: bold;
+  text-align: center;
+}
+.acolchado p {
+  text-align: center;
+}
+
+.galeriafoto {
+  display: flex;
+  justify-content: space-around;
+}
+.galeriafoto img {
+  height: 400px;
+  width: 400px;
+}
+@media only screen and (max-width: 375px) {
+  .galeriafoto {
+    flex-direction: column;
+  }
+  .galeriafoto img {
+    width: 100%;
+    padding: 30px;
+  }
 }
 
 .ofertas {
@@ -96,45 +132,6 @@
 div img {
   width: 1365px;
   height: 350px;
-}
-
-.encontratucolchon {
-  display: flex;
-  padding: 5%;
-}
-
-.colchon1 {
-  padding: 30px;
-}
-
-.colchon2 {
-  padding: 30px;
-}
-
-.resorte1 {
-  display: flex;
-  margin-left: 200px;
-}
-
-.mainsection div img {
-  width: 600px;
-  height: 400px;
-  margin-top: 30px;
-  padding: 30px;
-}
-
-.main1 h2 {
-  color: black;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: sans-serif;
-  background-color: lightblue;
-  display: flex;
-  border: 2px solid black;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
 }
 
 section iframe {
@@ -182,22 +179,6 @@ section iframe {
   border-radius: 20px;
   opacity: 60%;
   justify-content: center;
-}
-
-.ref-category {
-  color: black;
-}
-
-.contacto {
-  color: blue;
-  padding: 10px 10px 20px 35px;
-  margin: 30px;
-}
-
-.contacto1 h3 {
-  color: red;
-  text-decoration: none;
-  padding: 40px 10px 0px 10px;
 }
 
 .grid-ubicacion {

@@ -28,44 +28,6 @@ div img{
     height: 350px;
 }
 
-.encontratucolchon{
-    display: flex;
-    padding: 5%;
-}
-
-.colchon1{
-    padding: 30px;
-}
-
-.colchon2{
-    padding: 30px;    
-}
-
-.resorte1 {
-    display: flex;
-    margin-left: 200px;
-}
-.mainsection div img{
-    width: 600px;
-    height: 400px;
-    margin-top: 30px;
-    padding: 30px;
-}
-
-.main1 h2{
-    color: black;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-family: sans-serif;
-    background-color: lightblue;
-    display: flex;
-    border: 2px solid black;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-}
-
 section iframe{
 
     width: 100px;
@@ -132,26 +94,6 @@ section iframe{
     justify-content: center;
 }
 
-.ref-category{
-  
-    color:black;
-}
-
-
-
-.contacto{
-    color: blue;
-    padding: 10px 10px 20px 35px;
-    margin: 30px;
-}
-
-.contacto1 h3 {
-    color: red;
-    text-decoration: none;
-    padding: 40px 10px 0px 10px;
-
-}
-
 .grid-ubicacion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -174,7 +116,6 @@ section iframe{
     }
 
 }
-
 
 .nuestras-marcas{
     background-color: lightblue;

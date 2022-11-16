@@ -80,7 +80,7 @@
   align-items: flex-start;
   margin: 0;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 375px) {
   .contact-page .container {
     text-align: center;
     max-width: 100%;
@@ -92,7 +92,7 @@
   margin-left: 10px;
   margin-top: 30px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 900px) {
   .contacto {
     text-align: center;
     max-width: 100%;
@@ -179,7 +179,7 @@
   margin-bottom: 40px;
   gap: 20px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 375px) {
   .imagenescolchoneria {
     flex-direction: column;
     margin-top: 20px;
@@ -190,7 +190,7 @@
   height: 400px;
   width: 100%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 375px) {
   .imagenescolchoneria img {
     width: auto;
   }
@@ -361,7 +361,7 @@ footer img {
   width: 100px;
   transform: scale(1.2);
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
   .header-container ul {
     flex-direction: column;
     text-align: center;
@@ -396,7 +396,7 @@ footer img {
   z-index: auto;
   font-style: italic;
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
   .open-bar p {
     text-align: center;
   }

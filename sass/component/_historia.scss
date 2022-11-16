@@ -1,0 +1,47 @@
+.historia{
+
+    h1, h2{
+        color: lightblue;
+        font-weight: bold;
+        text-align: center;    
+        margin-top: 30px;
+    }
+    
+    p{
+
+        text-align: center;
+    }
+        
+    
+}
+
+.imagenescolchoneria{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+
+    @media only screen and (max-width: 375px){
+
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+        
+    }
+
+    img{
+
+        height: 400px;
+        width: 100%;
+
+        @media only screen and (max-width: 375px){
+
+            width: auto;
+        }
+      
+    }
+
+}

@@ -71,6 +71,44 @@
   border-radius: 20px;
 }
 
+.contact-page {
+  display: flex;
+}
+.contact-page .container {
+  display: flex;
+  max-width: 33%;
+  align-items: flex-start;
+  margin: 0;
+}
+@media only screen and (max-width: 375px) {
+  .contact-page .container {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.contacto {
+  color: lightblue;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 375px) {
+  .contacto {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.mb-3 {
+  margin: 20px;
+}
+
+.button {
+  border: 3px solid black;
+  padding: 5px;
+  margin-left: 20px;
+}
+
 .textoexplicativo h1 {
   color: lightblue;
   text-align: center;
@@ -97,6 +135,7 @@
 }
 .galeriafoto img {
   border: 3px solid black;
+  border-radius: 20px;
   height: 400px;
   width: 400px;
 }
@@ -120,6 +159,41 @@
 }
 .sabanas img {
   border: 3px solid black;
+}
+
+.historia h1, .historia h2 {
+  color: lightblue;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+.historia p {
+  text-align: center;
+}
+
+.imagenescolchoneria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+@media only screen and (max-width: 375px) {
+  .imagenescolchoneria {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
+.imagenescolchoneria img {
+  height: 400px;
+  width: 100%;
+}
+@media only screen and (max-width: 375px) {
+  .imagenescolchoneria img {
+    width: auto;
+  }
 }
 
 .ofertas {

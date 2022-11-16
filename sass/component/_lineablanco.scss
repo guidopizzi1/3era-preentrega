@@ -34,6 +34,7 @@
     justify-content: space-around;
 
     img{
+        border: 3px solid black;
         height: 400px;
         width: 400px;
     }
@@ -47,7 +48,22 @@
             padding: 30px;
            
         }
+    }
+}
 
-        
+.sabanas{
+
+    h2{
+        color: lightblue;
+        font-weight: bold;
+        text-align: center;        
+    }
+
+    p{
+        text-align: center;
+    }
+
+    img{
+        border: 3px solid black;
     }
 }

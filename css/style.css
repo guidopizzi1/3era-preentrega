@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .grilla-colchones {
     display: grid;
     grid-template-columns: auto;
@@ -49,7 +49,7 @@
 }
 
 /*  Pantalla resposive para la pagina principal  */
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 425px) {
   .grilla-colchones {
     display: grid;
     grid-template-columns: auto;
@@ -80,7 +80,7 @@
   align-items: flex-start;
   margin: 0;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .contact-page .container {
     text-align: center;
     max-width: 100%;
@@ -92,7 +92,7 @@
   margin-left: 10px;
   margin-top: 30px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .contacto {
     text-align: center;
     max-width: 100%;
@@ -139,7 +139,7 @@
   height: 400px;
   width: 400px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .galeriafoto {
     flex-direction: column;
   }
@@ -179,7 +179,7 @@
   margin-bottom: 40px;
   gap: 20px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .imagenescolchoneria {
     flex-direction: column;
     margin-top: 20px;
@@ -190,7 +190,7 @@
   height: 400px;
   width: 100%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .imagenescolchoneria img {
     width: auto;
   }
@@ -241,7 +241,7 @@ section iframe {
 }
 
 /* responsive */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .categoria-colchones {
     grid-template-columns: auto;
   }
@@ -280,7 +280,7 @@ section iframe {
   font-weight: bold;
   margin-top: 10px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .grid-ubicacion {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -361,7 +361,7 @@ footer img {
   width: 100px;
   transform: scale(1.2);
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .header-container ul {
     flex-direction: column;
     text-align: center;
@@ -396,7 +396,7 @@ footer img {
   z-index: auto;
   font-style: italic;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .open-bar p {
     text-align: center;
   }

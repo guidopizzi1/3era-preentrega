@@ -1,5 +1,5 @@
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:425px){
     .grilla-colchones {
         display: grid;
         grid-template-columns: auto;
@@ -67,7 +67,7 @@
 }
 
 /*  Pantalla resposive para la pagina principal  */
-@media only screen and (min-width: 400px){
+@media only screen and (max-width: 425px){
     .grilla-colchones {
         display: grid;
         grid-template-columns: auto;

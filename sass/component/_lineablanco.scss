@@ -1,10 +1,13 @@
+@import "../base/_listas";
+@import "../base/mixins";
+
+
 .textoexplicativo {
 
     h1{
-        color: lightblue;
-        text-align: center;
+        @include subtitulos;
         margin-top: 20px;
-        font-weight: bold;
+        
     }
     p{
         text-align: center;
@@ -16,10 +19,7 @@
 .acolchado{
 
     h2{
-        color: lightblue;
-        font-weight: bold;
-        text-align: center;
-        
+        @include subtitulos
     }
 
     p{
@@ -55,9 +55,7 @@
 .sabanas{
 
     h2{
-        color: lightblue;
-        font-weight: bold;
-        text-align: center;        
+        @include subtitulos      
     }
 
     p{

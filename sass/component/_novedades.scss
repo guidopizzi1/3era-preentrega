@@ -1,0 +1,7 @@
+@import "../base/_listas";
+@import "../base/mixins";
+
+h1{
+
+    @include subtitulos
+}

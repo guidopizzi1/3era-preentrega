@@ -1,4 +1,7 @@
 
+@import "../base/_listas";
+@import "../base/mixins";
+
 @media only screen and (max-width:425px){
     .grilla-colchones {
         display: grid;
@@ -17,7 +20,7 @@
     padding-top: 20px;
 
     h1{
-    color: lightblue;
+    color: nth($colores, 1);
     font-weight: bold;
 
     }
@@ -49,9 +52,7 @@
         }
 
         h2{
-            text-align: center;
-            color: lightblue;
-            font-weight: bold;
+            @include subtitulos
         }
     }
 }

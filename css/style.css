@@ -35,9 +35,9 @@
   text-align: center;
 }
 .grilla-colchones .sub-colchones h2 {
-  text-align: center;
   color: lightblue;
   font-weight: bold;
+  text-align: center;
 }
 
 .grilla-colchones {
@@ -111,9 +111,9 @@
 
 .textoexplicativo h1 {
   color: lightblue;
+  font-weight: bold;
   text-align: center;
   margin-top: 20px;
-  font-weight: bold;
 }
 .textoexplicativo p {
   text-align: center;
@@ -196,31 +196,13 @@
   }
 }
 
-.ofertas {
-  color: white;
-  background-color: red;
-  padding: 5px 10px;
-  border-radius: 6px;
-}
-
-.ofertas:hover {
-  transform: scale(2);
-  transition: all 1s;
+h1 {
+  color: lightblue;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* al pasar el mouse por encima de los bots escale o crezca 4 veces su tamaño Hover*/
-.logo img {
-  height: 70px;
-  align-items: center;
-  padding: 20px;
-  margin: 0px;
-}
-
-div img {
-  width: 1365px;
-  height: 350px;
-}
-
 section iframe {
   width: 100px;
   height: 400px;
@@ -276,8 +258,8 @@ section iframe {
 }
 .grid-ubicacion .ubi-title {
   color: lightblue;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
   margin-top: 10px;
 }
 @media only screen and (max-width: 425px) {

@@ -1,32 +1,7 @@
-
-
-.ofertas{
-    color: white;
-    background-color: red;
-    padding: 5px 10px;
-    border-radius: 6px;
-    
-}
-
-.ofertas:hover{
-    transform: scale(2);
-    
-    transition: all 1s;
-}
+@import "../base/_listas";
+@import "../base/mixins";
 
 /* al pasar el mouse por encima de los bots escale o crezca 4 veces su tamaño Hover*/
-
-.logo img{
-    height: 70px;
-    align-items: center;
-    padding: 20px;
-    margin: 0px;
-}
-
-div img{
-    width: 1365px;
-    height: 350px;
-}
 
 section iframe{
 
@@ -101,9 +76,7 @@ section iframe{
     grid-gap: 3%;
 
     .ubi-title{
-        color: lightblue;
-        text-align: center;
-        font-weight: bold;
+        @include subtitulos;
         margin-top: 10px;
     }
     

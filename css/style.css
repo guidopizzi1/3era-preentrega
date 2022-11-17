@@ -196,12 +196,6 @@
   }
 }
 
-h1 {
-  color: lightblue;
-  font-weight: bold;
-  text-align: center;
-}
-
 /* al pasar el mouse por encima de los bots escale o crezca 4 veces su tamaño Hover*/
 section iframe {
   width: 100px;

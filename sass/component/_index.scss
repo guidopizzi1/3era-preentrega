@@ -58,7 +58,7 @@ section iframe{
     }   
 
     /* responsive */
-    @media only screen and (min-width: 900px){
+    @media only screen and (max-width: 400px){
         .categoria-colchones {
             
             grid-template-columns: auto;

@@ -21,8 +21,6 @@
         padding-left: 0;
     
 
-     
-       
      li:hover{
 
         transition: all 0.5s;
@@ -30,10 +28,11 @@
         }   
 
 
-    img{
-        height: 100px;
+    .logopizber{
+        height: 80px;
         width: 100px;
-        transform: scale(1.2);
+        transform:none;
+        
     }
     
     @media only screen and (max-width:425px){

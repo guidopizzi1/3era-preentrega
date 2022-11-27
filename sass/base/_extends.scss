@@ -1,0 +1,33 @@
+
+
+%mensaje {
+
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+%flexbox {
+
+    justify-content: center;
+    display: flex;
+}
+
+.error {
+    background-color: red;
+    @extend %mensaje;
+
+}
+
+.accept {
+
+    background-color: green;
+    @extend %mensaje;
+}
+
+.disable {
+
+    background-color: grey;
+    @extend %mensaje;
+    @extend %flexbox;
+}

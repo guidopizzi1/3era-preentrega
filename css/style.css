@@ -21,17 +21,20 @@
   margin: 20px;
 }
 
-.grilla-colchones {
-  display: flex;
-}
 .grilla-colchones p {
-  color: green;
+  color: black;
+  font-weight: bold;
   margin: 0px 10px 0px 10px;
   text-align: center;
 }
+.grilla-colchones .sub-colchones {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .grilla-colchones .sub-colchones img {
   width: 70%;
-  align-items: center;
+  margin-left: 160px;
   text-align: center;
 }
 .grilla-colchones .sub-colchones h2 {
@@ -45,7 +48,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   margin-top: 30px;
-  position: relative;
+  justify-content: space-around;
 }
 
 /*  Pantalla resposive para la pagina principal  */
@@ -66,9 +69,43 @@
   width: 80%;
   height: 60%;
   object-fit: cover;
-  border: solid 4px black;
   margin: 50px;
   border-radius: 20px;
+}
+.grid-image:hover {
+  transition: 0, 8s;
+  filter: brightness(70%);
+}
+
+.main-almohadas {
+  margin-top: 20px;
+}
+.main-almohadas h2 {
+  font-size: 40px;
+  color: lightblue;
+  font-weight: bold;
+  text-align: center;
+}
+.main-almohadas p {
+  text-align: center;
+}
+
+.almohada-grid {
+  margin-top: 60px;
+  margin-left: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  grid-gap: 20px;
+}
+.almohada-grid .gridimage {
+  width: 500px;
+  height: 400px;
+}
+.almohada-grid .gridimage:hover {
+  filter: brightness(60%);
 }
 
 .contact-page {
@@ -136,8 +173,9 @@
 .galeriafoto img {
   border: 3px solid black;
   border-radius: 20px;
-  height: 400px;
+  height: 300px;
   width: 400px;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 425px) {
   .galeriafoto {
@@ -158,7 +196,7 @@
   text-align: center;
 }
 .sabanas img {
-  border: 3px solid black;
+  border: 3px solid white;
 }
 
 .historia h1, .historia h2 {
@@ -196,6 +234,53 @@
   }
 }
 
+.small-ideal, .normal-ideal, .large-ideal {
+  padding: 20px;
+}
+.small-ideal .main-img, .normal-ideal .main-img, .large-ideal .main-img {
+  height: 330px;
+}
+
+.main.ideal {
+  width: 100%;
+  padding: 100px 100px 30px 100px;
+}
+
+.fila-ideal {
+  display: flex;
+  height: 450px;
+}
+
+.columna-1-3-ideal {
+  display: flex;
+  width: 50%;
+  padding: 0%;
+}
+
+.columna-2-3-ideal {
+  width: 50%;
+  display: block;
+  align-items: center;
+}
+.columna-2-3-ideal h2 {
+  font-weight: bold;
+  color: lightblue;
+}
+
+.small-ideal {
+  height: 380px;
+  width: 100%;
+}
+.small-ideal:hover {
+  transition: 0, 8s;
+  filter: brightness(70%);
+}
+
+.normal-ideal, .large-ideal {
+  height: 800px;
+  width: 100%;
+}
+
 /* al pasar el mouse por encima de los bots escale o crezca 4 veces su tamaño Hover*/
 section iframe {
   width: 100px;
@@ -231,6 +316,7 @@ section iframe {
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
+  height: 300px;
 }
 
 .image-title {
@@ -267,7 +353,7 @@ section iframe {
 
 .nuestras-marcas {
   background-color: lightblue;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .nuestras-marcas h2 {
   text-align: center;
@@ -306,7 +392,52 @@ section iframe {
 }
 
 footer img {
-  height: 70px;
+  height: 80px;
+}
+
+.main-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.small, .normal, .large {
+  padding: 20px;
+}
+
+.main-container {
+  width: 100%;
+  padding: 100px 100px 30px 100px;
+}
+
+.fila {
+  display: flex;
+}
+
+.columna-1-3 {
+  width: 50%;
+}
+
+.columna-2-3 {
+  width: 50%;
+}
+
+.small {
+  height: 400px;
+  width: 100%;
+}
+.small:hover {
+  transition: 0, 8s;
+  filter: brightness(70%);
+}
+
+.normal, .large {
+  height: 800px;
+  width: 100%;
+}
+.normal:hover, .large:hover {
+  transition: 0, 8s;
+  filter: brightness(30%);
 }
 
 .header-container {
@@ -332,10 +463,10 @@ footer img {
   transition: all 0.5s;
   transform: scale(2);
 }
-.header-container ul img {
-  height: 100px;
+.header-container ul .logopizber {
+  height: 80px;
   width: 100px;
-  transform: scale(1.2);
+  transform: none;
 }
 @media only screen and (max-width: 425px) {
   .header-container ul {
@@ -378,9 +509,37 @@ footer img {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.disable, .accept, .error {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.disable {
+  justify-content: center;
+  display: flex;
+}
+
+.error {
+  background-color: red;
+}
+
+.accept {
+  background-color: green;
+}
+
+.disable {
+  background-color: grey;
+}
+
+.card-uno {
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.card-dos {
+  background-color: green;
+  border: 4px solid red;
 }
 
 body {

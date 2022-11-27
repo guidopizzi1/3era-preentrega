@@ -1,1 +1,60 @@
 @import "../base/_listas";
+@import "../base/mixins";
+
+
+
+
+.small-ideal, .normal-ideal, .large-ideal{
+    padding: 20px;
+   
+    .main-img{
+        height: 330px;
+    }
+}
+
+    .main.ideal{
+        width: 100%;
+        padding: 100px 100px 30px 100px;
+    }
+
+    .fila-ideal{
+        display: flex;
+        height: 450px;
+    }
+
+    .columna-1-3-ideal{
+        display: flex;
+        width:50%;
+        padding: 0%;
+    
+    }
+
+    .columna-2-3-ideal{
+        width: 50%;
+        display: block;
+        align-items: center;
+
+        h2{
+            font-weight: bold;
+            color: lightblue;
+        }
+    }
+
+    .small-ideal {
+        height: 380px;
+        width: 100%;
+        
+        &:hover{
+            transition: 0,8s;
+            filter: brightness(70%);
+        }
+  }
+
+     .normal-ideal, .large-ideal{
+         height:800px;
+         width: 100%;
+
+         
+        }
+     
+

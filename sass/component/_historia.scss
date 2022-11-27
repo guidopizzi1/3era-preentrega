@@ -4,7 +4,7 @@
 .historia{
 
     h1, h2{
-        @include subtitulos;
+        @include titulo (lightblue, bold, center);
         margin-top: 30px;
     }
     

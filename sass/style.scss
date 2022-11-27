@@ -7,13 +7,13 @@
 @import "base/_nav";
 @import "base/_listas";
 @import "base/mixins";
+@import "base/extends";
+@import "base/condiciones";
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-}
+
+
 
 body{
     font-family: sans-serif;

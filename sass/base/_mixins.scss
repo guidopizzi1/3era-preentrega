@@ -5,3 +5,23 @@
     text-align: center;
     
 }
+
+@mixin titulo ($color, $font, $align){
+
+    color: $color;
+    font-weight: $font;
+    text-align: $align;
+}
+
+
+// @mixin border ($relleno, $borde, $radio){
+
+//     background-color: $relleno;
+//     border: $borde;
+//     border-radius: $radio;
+
+// }
+
+// .cancel-dos{
+//     @include border(red,1px solid black ,10px )
+// }

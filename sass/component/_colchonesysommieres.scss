@@ -35,35 +35,40 @@
 
 .grilla-colchones{
 
-    display: flex;
-
     p{
-        color: green;
+        color: black;
+        font-weight: bold;
         margin: 0px 10px 0px 10px;
         text-align: center;
     }
 
     .sub-colchones{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
  
         img{
             width: 70%;
-            align-items: center;
+            margin-left: 160px;
             text-align: center;
+           
         }
 
         h2{
-            @include subtitulos
+            @include titulo (lightblue, bold, center)
         }
     }
 }
+
+
 
 .grilla-colchones{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     margin-top: 30px;
-    position: relative;
-    
+    justify-content: space-around;
     
 }
 
@@ -91,7 +96,51 @@
     width: 80%;
     height: 60%;
     object-fit: cover;
-    border: solid 4px black;
     margin: 50px;
     border-radius: 20px;
+
+    &:hover{
+        
+        transition: 0,8s;
+            filter: brightness(70%);
+    }
+    }
+
+
+    .main-almohadas{
+
+        margin-top: 20px;
+        h2{
+            font-size: 40px;
+            @include titulo (lightblue, bold, center)
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+    .almohada-grid{
+        margin-top:60px;
+        margin-left: 120px;
+        display: grid;  
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: space-around;
+        align-items: center;
+        grid-gap: 20px;
+
+        .gridimage{
+        
+            width: 500px;
+            height: 400px;
+
+            &:hover{
+                filter: brightness(60%);
+               
+            }
+
+      
+
+    }
     }

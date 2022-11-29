@@ -163,7 +163,7 @@
   width: 400px;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .galeriafoto {
     flex-direction: column;
   }
@@ -180,9 +180,6 @@
 }
 .sabanas p {
   text-align: center;
-}
-.sabanas img {
-  border: 3px solid white;
 }
 
 .historia h1, .historia h2 {

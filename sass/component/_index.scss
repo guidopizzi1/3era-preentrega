@@ -34,7 +34,7 @@ section iframe{
     }   
 
     /* responsive */
-    @media only screen and (max-width: 425px){
+    @media only screen and (max-width: 600px){
         .categoria-colchones {
             
             grid-template-columns: auto;
@@ -79,7 +79,7 @@ section iframe{
         margin-top: 10px;
     }
     
-    @media only screen and (max-width:425px){
+    @media only screen and (max-width:600px){
         grid-template-columns: auto;
         grid-template-rows: auto;
         align-items: center;
@@ -189,4 +189,22 @@ footer img{
             transition: 0,8s;
             filter: brightness(30%);
         }
+     }
+
+
+     #carouselExampleIndicators1{
+
+        margin-top: 60px;
+     }
+
+     .fotos2do {
+
+        @include fotos (100%, 500px)
+
+     }
+
+     .tituloslide{
+
+        color: black;
+        font-weight: bold;
      }

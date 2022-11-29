@@ -34,8 +34,13 @@
 }
 .grilla-colchones .sub-colchones img {
   width: 70%;
-  margin-left: 160px;
+  margin-left: 15%;
   text-align: center;
+}
+@media only screen and (max-width: 1100px) {
+  .grilla-colchones .sub-colchones img {
+    margin-left: 15%;
+  }
 }
 .grilla-colchones .sub-colchones h2 {
   color: lightblue;
@@ -52,7 +57,7 @@
 }
 
 /*  Pantalla resposive para la pagina principal  */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 800px) {
   .grilla-colchones {
     display: grid;
     grid-template-columns: auto;
@@ -88,24 +93,6 @@
 }
 .main-almohadas p {
   text-align: center;
-}
-
-.almohada-grid {
-  margin-top: 60px;
-  margin-left: 120px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-content: space-around;
-  align-items: center;
-  grid-gap: 20px;
-}
-.almohada-grid .gridimage {
-  width: 500px;
-  height: 400px;
-}
-.almohada-grid .gridimage:hover {
-  filter: brightness(60%);
 }
 
 .contact-page {
@@ -171,7 +158,6 @@
   justify-content: space-around;
 }
 .galeriafoto img {
-  border: 3px solid black;
   border-radius: 20px;
   height: 300px;
   width: 400px;
@@ -212,25 +198,21 @@
 .imagenescolchoneria {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-top: 40px;
-  margin-bottom: 40px;
   gap: 20px;
-}
-@media only screen and (max-width: 425px) {
-  .imagenescolchoneria {
-    flex-direction: column;
-    margin-top: 20px;
-    gap: 20px;
-  }
+  justify-content: space-around;
+  width: auto;
 }
 .imagenescolchoneria img {
-  height: 400px;
-  width: 100%;
+  width: 50%;
 }
-@media only screen and (max-width: 425px) {
-  .imagenescolchoneria img {
-    width: auto;
+@media only screen and (max-width: 800px) {
+  .imagenescolchoneria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
   }
 }
 
@@ -265,6 +247,12 @@
 .columna-2-3-ideal h2 {
   font-weight: bold;
   color: lightblue;
+}
+@media only screen and (max-width: 425px) {
+  .columna-2-3-ideal {
+    display: inline-block;
+    align-items: center;
+  }
 }
 
 .small-ideal {
@@ -302,7 +290,7 @@ section iframe {
 }
 
 /* responsive */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .categoria-colchones {
     grid-template-columns: auto;
   }
@@ -342,7 +330,7 @@ section iframe {
   text-align: center;
   margin-top: 10px;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .grid-ubicacion {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -440,6 +428,20 @@ footer img {
   filter: brightness(30%);
 }
 
+#carouselExampleIndicators1 {
+  margin-top: 60px;
+}
+
+.fotos2do {
+  width: 100%;
+  height: 500px;
+}
+
+.tituloslide {
+  color: black;
+  font-weight: bold;
+}
+
 .header-container {
   background-color: #6ec2c5;
   padding: 1%;
@@ -468,7 +470,7 @@ footer img {
   width: 100px;
   transform: none;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .header-container ul {
     flex-direction: column;
     text-align: center;

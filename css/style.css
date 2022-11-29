@@ -442,6 +442,14 @@ footer img {
   font-weight: bold;
 }
 
+.h5tituloslide {
+  color: black;
+}
+
+#carouselExampleCaptions {
+  margin: 30px;
+}
+
 .header-container {
   background-color: #6ec2c5;
   padding: 1%;

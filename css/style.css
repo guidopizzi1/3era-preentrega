@@ -245,10 +245,11 @@
   font-weight: bold;
   color: lightblue;
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .columna-2-3-ideal {
-    display: inline-block;
-    align-items: center;
+    display: flex;
+    float: initial;
+    padding: 5%;
   }
 }
 
